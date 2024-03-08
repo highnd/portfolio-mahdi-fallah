@@ -50,37 +50,38 @@ export const SpotlightButton = () => {
   );
 };
 
-export const DrawOutlineButton = ({ children, ...rest }: any) => {
+export const DrawOutlineButton = ({
+  children,
+  color,
+  background,
+  ...rest
+}: any) => {
   return (
     <button
       {...rest}
-      className="group relative px-4 py-3 font-medium text-slate-100 transition-colors 
-        duration-[300ms] bg-green-700 hover:bg-transparent hover:text-white"
+      className={`group relative px-4 py-3 font-medium text-slate-100 transition-colors 
+        duration-[300ms] ${background} hover:bg-transparent hover:text-white`}
     >
       <span className="tracking-widest text-glow">{children}</span>
 
       {/* TOP */}
       <span
-        className="absolute left-0 top-0 h-[2px] w-0
-         bg-green-500 transition-all duration-300 group-hover:w-full"
+        className={`absolute left-0 top-0 h-[2px] w-0 ${color} transition-all duration-300 group-hover:w-full`}
       />
 
       {/* RIGHT */}
       <span
-        className="absolute right-0 top-0 h-0 w-[2px]
-         bg-green-500 transition-all delay-100 duration-300 group-hover:h-full"
+        className={`absolute right-0 top-0 h-0 w-[2px] ${color} transition-all delay-100 duration-300 group-hover:h-full`}
       />
 
       {/* BOTTOM */}
       <span
-        className="absolute bottom-0 right-0 h-[2px] w-0
-         bg-green-500 transition-all delay-200 duration-300 group-hover:w-full"
+        className={`absolute bottom-0 right-0 h-[2px] w-0 ${color} transition-all delay-200 duration-300 group-hover:w-full`}
       />
 
       {/* LEFT */}
       <span
-        className="absolute bottom-0 left-0 h-0 w-[2px]
-         bg-green-500 transition-all delay-300 duration-300 group-hover:h-full"
+        className={`absolute bottom-0 left-0 h-0 w-[2px] ${color} transition-all delay-300 duration-300 group-hover:h-full`}
       />
     </button>
   );

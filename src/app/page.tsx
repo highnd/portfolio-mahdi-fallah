@@ -67,8 +67,13 @@ export default function Home() {
             </p>
             {/* BUTTONS */}
             <div className="w-full flex gap-4 ">
-              <FbAnimateButton>View My Work</FbAnimateButton>
-              <DrawOutlineButton>Contact Me</DrawOutlineButton>
+              {/* <FbAnimateButton>View My Work</FbAnimateButton> */}
+              <DrawOutlineButton background="bg-green-600" color="bg-green-400">
+                View My Work
+              </DrawOutlineButton>
+              <DrawOutlineButton background="bg-sky-700" color="bg-sky-400">
+                Contact Me
+              </DrawOutlineButton>
             </div>
           </MotionDiv>
         </MotionDiv>
