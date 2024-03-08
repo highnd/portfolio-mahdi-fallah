@@ -53,11 +53,11 @@ export default function Home() {
             {/* TITLE */}
             <h1 className="text-4xl md:text-5xl font-bold  text-[#c5e8f3]">
               Crafting Digital Experiences, Designing Tomorrow
-              <br />
-              𓆝 𓆟 𓆞 𓆝 𓆟
             </h1>
+            <p className="my-1 text-4xl md:text-5xl font-bold  text-[#c5e8f3]">
+              𓆝 𓆟 𓆞 𓆝 𓆟
+            </p>
             <ContactIconsList />
-
             {/* DESC */}
             <p className="md:text-xl text-white">
               Welcome to my digital canvas, where innovation and creativity
