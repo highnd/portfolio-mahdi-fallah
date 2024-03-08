@@ -59,7 +59,7 @@ export default function Navbar() {
               }`}
             ></div>
             <div
-              className={`w-10 h-1  rounded bg-blue-500 transition-all ${
+              className={`w-10 h-1  rounded text-sky-500 transition-all ${
                 open ? "opacity-0" : "opacity-1"
               }`}
             ></div>
