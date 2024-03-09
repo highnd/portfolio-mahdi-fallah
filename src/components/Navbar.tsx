@@ -104,12 +104,7 @@ export default function Navbar() {
         {menus?.map((item, idx) => (
           <MotionDiv
             key={item.title}
-            variants={fadeIn(
-              "left",
-              "spring",
-              (idx + 1) * 0.2,
-              (idx + 1) * 0.2
-            )}
+            variants={fadeIn("left", "spring", idx * 0.1, idx * 0.2)}
             onClick={() => setOpen(false)}
             className={`text-white hover:text-indigo-600  my-4`}
           >

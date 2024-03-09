@@ -3,6 +3,7 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
+import { BackgroundBeams } from "@/components/BackgroundBeams";
 
 const SpaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
           <Navbar />
           {children}
         </ThemeProvider>
+        <BackgroundBeams />
       </body>
     </html>
   );

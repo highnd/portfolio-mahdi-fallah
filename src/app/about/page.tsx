@@ -16,7 +16,7 @@ const AboutPage = () => {
       transition={{ duration: 1 }}
     >
       {/*  CONTAINER */}
-      <div className="w-full py-20   md:px-4 h-full  overflow-x-hidden  lg:px-[300px] px-6 backdrop-blur-3xl">
+      <div className="w-full py-20   md:px-4 h-full  overflow-x-hidden  lg:px-[300px] px-6 ">
         {/* BIOGRAPHY CONTAINER */}
         <div className="flex flex-col gap-12 justify-center ">
           {/* BIOGRAPHY IMAGE */}

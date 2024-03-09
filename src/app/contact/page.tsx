@@ -20,7 +20,7 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const inputStyle =
-    "w-full h-[52px] rounded-lg pl-6 capitalize bg-transparent focus:bg-white/5 outline-none focus:ring-1 focus:ring-green-500 border border-sky-500 placeholder:text-white/30 placeholder:font-light";
+    "w-full h-[52px] rounded-lg pl-6 capitalize bg-transparent focus:bg-white/5 outline-none focus:ring-1 focus:ring-green-500 border border-sky-500 placeholder:text-white/30 placeholder:font-light md:mb-1 mb-3";
 
   // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   //   e.preventDefault();
@@ -53,9 +53,9 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit={"hidden"}
-            className="lg:text-5xl text-2xl text-center lg:mb-12 my-4  "
+            className="lg:text-5xl text-2xl text-center lg:mb-12 mb-8 my-4  "
           >
-            Lets <span className="text-animated-glow">connect . .</span>
+            Lets Get <span className="text-animated-glow">Connected . .</span>
           </motion.h2>
           <motion.form
             variants={fadeIn("up", "spring", 0.4, 0.3)}
@@ -70,7 +70,7 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="name"
-                className={inputStyle + " md:mb-0 mb-3"}
+                className={inputStyle + " md:mb-0 mb-6"}
                 value={message.name}
                 onChange={(e) =>
                   setMessage({ ...message, name: e.target.value })
@@ -79,7 +79,7 @@ const Contact = () => {
               <input
                 type="email"
                 placeholder="email"
-                className={inputStyle}
+                className={inputStyle + ""}
                 value={message.email}
                 onChange={(e) =>
                   setMessage({ ...message, email: e.target.value })

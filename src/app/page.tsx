@@ -1,5 +1,5 @@
 import { PinContainer } from "@/components/3DPin";
-import { BackgroundBeams } from "@/components/BackgroundBeams";
+
 import ContactIconsList from "@/components/ContactIconsList";
 import { DrawOutlineButton, FbAnimateButton } from "@/components/CustomBtn";
 import { MotionDiv } from "@/components/MotionTags";
@@ -78,7 +78,6 @@ export default function Home() {
           </MotionDiv>
         </MotionDiv>
       </MotionDiv>
-      <BackgroundBeams />
     </main>
   );
 }
