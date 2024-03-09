@@ -46,7 +46,7 @@ export default function Home() {
 
           {/* TEXT CONTAINER */}
           <MotionDiv
-            variants={fadeIn("up", "tween", 0.2, 1)}
+            variants={fadeIn("right", "spring", 0.2, 1)}
             className=" flex flex-col gap-4  md:order-1 py-6 text-left  "
           >
             {/* <TypewriterEffectSmooth words={words} /> */}
