@@ -54,6 +54,7 @@ export const DrawOutlineButton = ({
   children,
   color,
   background,
+  glow,
   ...rest
 }: any) => {
   return (
@@ -62,7 +63,9 @@ export const DrawOutlineButton = ({
       className={`group relative px-4 py-3 font-medium text-slate-100 transition-colors 
         duration-[300ms] ${background} hover:bg-transparent hover:text-white`}
     >
-      <span className="tracking-widest text-glow">{children}</span>
+      <span className={`tracking-widest ${glow && "text-glow"}`}>
+        {children}
+      </span>
 
       {/* TOP */}
       <span

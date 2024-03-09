@@ -54,7 +54,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-5xl font-bold  text-[#c5e8f3]">
               Crafting Digital Experiences, Designing Tomorrow
             </h1>
-            <p className="my-1 text-4xl md:text-5xl font-bold  text-[#c5e8f3]">
+            <p className="lg:my-0 my-1 text-4xl md:text-5xl font-bold  text-[#c5e8f3] flex items-center ">
               𓆝 𓆟 𓆞 𓆝 𓆟
             </p>
             <ContactIconsList />

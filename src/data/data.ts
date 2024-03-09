@@ -66,4 +66,16 @@ export const skills = [
     id: 15,
     name: "Figma",
   },
+  {
+    id: 16,
+    name: "Material Ui",
+  },
+  {
+    id: 17,
+    name: "ShadCn ",
+  },
+  {
+    id: 18,
+    name: "Aceternity Ui",
+  },
 ];
