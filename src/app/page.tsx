@@ -1,10 +1,9 @@
-import { PinContainer } from "@/components/3DPin";
-
 import ContactIconsList from "@/components/ContactIconsList";
 import { DrawOutlineButton, FbAnimateButton } from "@/components/CustomBtn";
 import { MotionDiv } from "@/components/MotionTags";
 
 import { fadeIn } from "@/utils/motion";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -26,22 +25,13 @@ export default function Home() {
             variants={fadeIn("up", "tween", 0.2, 0.6)}
             className=" relative flex items-center justify-center  lg:h-[100%] h-[24rem] lg:mt-4 my-8 md:order-2 overflow-hidden"
           >
-            <PinContainer title="github" href="https://github.com/highnd">
-              <div
-                className="flex flex-col p-4 tracking-tight text-slate-100/50 
-              md:w-[20rem] w-[17rem] md:h-[20rem] h-[20rem] "
-              >
-                <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
-                  Mahdi Fallah
-                </h3>
-                <div className="text-base !m-0 !p-0 font-normal">
-                  <span className="text-slate-500 ">
-                    Full Stack Web Developer Working on Unique Deign
-                  </span>
-                </div>
-                <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-green-500 via-blue-200 to-blue-500" />
-              </div>
-            </PinContainer>
+            <Image
+              src="https://images.pexels.com/photos/775358/pexels-photo-775358.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt=""
+              width={112}
+              height={112}
+              className="w-72 h-72 rounded-full object-cover"
+            />
           </MotionDiv>
 
           {/* TEXT CONTAINER */}
